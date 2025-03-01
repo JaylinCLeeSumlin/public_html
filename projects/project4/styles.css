@@ -1,0 +1,62 @@
+/* Add your CSS style definitions to this file */
+body article {
+    /* background-color: #f9f9f9; */
+    margin: 0em 4em 0em 4em;
+    font: "Open Sans";
+    font-size: 0.9rem, 1rem, 1.25rem;
+}
+
+h1 {
+    font: "Roboto Slab";
+    font-size: 2rem;
+    color: #9f2042;
+}
+
+blockquote {
+    font-family: "Roboto Slab";
+    font-size: 1.25rem;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #ececec;
+}
+
+ article #details {
+    color: #a9a9ba;
+    /* background-color: pink; */
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+#buttons {
+    margin: 20px;
+}
+
+a:link, a:visited  {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #ec8295;
+    text-decoration: none;
+    color: #9f2042;
+    background-color: #a9a9ba;
+    padding: 10px;
+    /* margin: 10px; */
+}
+
+a:hover {
+    background-color: #a9a9ba;
+    color: #9f2042;
+}
+
+footer {
+    background-color: #29293a;
+    color: white;
+    padding: 10px;
+}
+
+footer p a {
+    background-color: #29293a;
+}
