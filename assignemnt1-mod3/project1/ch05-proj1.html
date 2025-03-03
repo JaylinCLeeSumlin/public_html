@@ -9,32 +9,90 @@
    <link rel="stylesheet" href="ch05-proj1.css" />
 </head>
 <body>
-
     <section>
          <h3>Data</h3>
+         <h4> Orders </h4>
           <table>
-               <th> Id </th>
-               <th> Date </th>
-               <th> Customer </th>
-               <th> Country </th>
-               <th> Progress </th>
-               <th> Status </th>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-          </table>
-      
-         
+               <tr>
+                    <th> Id </th>
+                    <th> Date </th>
+                    <th> Customer </th>
+                    <th> Country </th>
+                    <th> Progress </th>
+                    <th> Status </th>
+               </tr>
+               <tr>
+                    <td> 123 </td>
+                    <td> Sep 12, 2017 </td>
+                    <td> Jean Rousseau </td>
+                    <td> France </td>
+                    <td> <progress class="order-progress" value="100" max="100"></progress> </td>
+                    <td> <span class="status status-shipped"> Shipped </span> </td>
+               </tr>
+               <tr>
+                    <td> 144 </td>
+                    <td> Sep 20, 2017 </td>
+                    <td> Georg Hegel </td>
+                    <td> Germany </td>
+                    <td> <progress class="order-progress" value="100" max="100"></progress> </td>
+                    <td> <span class="status status-shipped"> Shipped </span> </td>
+               </tr>
+               <tr>
+                    <td> 149 </td>
+                    <td> Oct 3, 2017 </td>
+                    <td> John Locke </td>
+                    <td> England </td>
+                    <td> <progress class="order-progress" value="50" max="100"></progress> </td>
+                    <td> <span class="status status-processing"> Processing </span> </td>
+               </tr>
+               <tr>
+                    <td> 162 </td>
+                    <td> Oct 8, 2017 </td>
+                    <td> Thomas Hobbes </td>
+                    <td> England </td>
+                    <td> <progress class="order-progress" value="25" max="100"></progress> </td>
+                    <td> <span class="status status-pending"> Pending </span> </td>
+               </tr>
+               <tr>
+                    <td> 177 </td>
+                    <td> Oct 10, 2017 </td>
+                    <td> Johann Fichte </td>
+                    <td> Germany </td>
+                    <td> <progress class="order-progress" value="25" max="100"></progress> </td>
+                    <td> <span class="status status-pending"> Pending </span> </td>
+               </tr>
+          </table>  
     </section>
     
     <section>
          <h3>Revise</h3>
-         
-        
+         <h4> Filter Orders </h4>
+          <form action="https://www.randyconnolly.com/tests/process.php" method="GET">
+          <!-- <form action="/assignemnt1-mod3/process.php" method="get"> -->
+               <label for="customer"> Customer </label> <br>
+               <input type="text" id="customer" name="customer"> <br> <br>
+
+               <label for="country"> Country </label> <br>
+               <select type="select" id="country" name="country">
+                    <option value="none"> Choose a country </option>
+                    <option value="France"> France </option>
+                    <option value="Germany"> Germany </option>
+                    <option value="England"> England </option>
+               </select> <br> <br>
+
+               <label for="status"> Status </label> <br>
+               <input type="radio" id="pending" name="status" value="Pending">
+               <label for="pending">Pending</label><br>
+               <input type="radio" id="processing" name="status" value="Processing">
+               <label for="processing">Processing</label><br>
+               <input type="radio" id="shipped" name="status" value="Shipped">
+               <label for="shipped">Shipped</label> <br> <br>
+
+               <label for="order-date"> Order Date </label> <br>
+               <input type="date" id="order-date" name=order-date> <br> <br>
+
+               <input type="submit" value="Submit">
+          </form>
     </section>    
-
-
 </body>
-</html>
+ </html>

@@ -1,12 +1,9 @@
 /* general text formatting */
-
-
 body {
    font-family: "Roboto", Verdana, Arial, sans-serif;
    font-size: 100%;
  background-color: #ECEFF1;    
 }
-
 section {
    background-color: white;
    margin: 1em 4em 1em 4em;
@@ -18,7 +15,6 @@ section h3 {
   padding: 0.75rem;
   background-color: #263238; 
 }
-
 .status {
     border-radius: 0.25rem;
     padding: 3px;
@@ -38,6 +34,8 @@ section h3 {
 
 
 /* table formatting -- you will add these */
-
+table {
+    max-width: 100%;
+}
 
 
