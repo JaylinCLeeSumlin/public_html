@@ -8,15 +8,15 @@ const Person = require("./person");
 function loadCSV(filePath) {
     // Read data from CSV file
     const data = fs.readFileSync(filePath, "utf8");
-    console.log(`Data: ${data}`);
+    // console.log(`Data: ${data}`);
 
     // Remove whitespace around data and split data into an array based on new line characters
     const lines = data.trim().split("\n")
-    console.log(`Lines: ${lines}`);
+    // console.log(`Lines: ${lines}`);
 
     // First array element is split into a 2D array to defind CSV headers
     const headers = lines[0].split(",");
-    console.log(`Headers: ${headers}`)
+    // console.log(`Headers: ${headers}`)
 
     // Create an empty array called people
     const people = [];
@@ -48,17 +48,33 @@ function searchByName(people, searchName) {
     return people.filter(person => person.name.toLowerCase() === searchName.toLowerCase());
 }
 
+// Search array people by given city
+function searchByCity(people, searchCity) {
+    /*
+    Return a new array of Person objects;
+    - Iterate through array person
+    - Convert city value and given city to lowercase
+    - Compare to determine a match
+    */
+    return people.filter(person => person.city.toLowerCase() === searchCity.toLowerCase());
+}
+
 // Call loadCSV function with data.csv file as argument
 const people = loadCSV("data.csv");
-console.log(`People: ${people}`)
+// console.log(`People: ${people}`)
 
 // For each element in array person, call getDetails() function from Person class
 console.log("All people:");
 people.forEach(person => console.log(person.getDetails()));
 
-// Call searchByName function and store resuts in searchResults
-const searchResults = searchByName(people, "Alice");
-
-// for each element in array person stored in searchResults, call getDetails() function
+// Call searchByName function and store resuts in searchNameResults
+const searchNameResults = searchByName(people, "Alice");
+// for each element in array person stored in searchNameResults, call getDetails() function
 console.log("\nSearch results for 'Alice':");
-searchResults.forEach(person => console.log(person.getDetails()));
+searchNameResults.forEach(person => console.log(person.getDetails()));
+
+// Call searchByCity function and store resuts in searchResults
+const searchCityResults = searchByCity(people, "Chicago");
+// for each element in array person stored in searchCityResults, call getDetails() function
+console.log("\nSearch results for 'Chicago':");
+searchCityResults.forEach(person => console.log(person.getDetails()));
