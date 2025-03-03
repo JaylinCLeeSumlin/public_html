@@ -27,7 +27,7 @@ function loadCSV(filePath) {
         const values = lines[i].split(",");
 
         // .. Use the inner array's elements as values to create a Person object...
-        const person = new Person(values[0], values[1], values[2]);
+        const person = new Person(values[0], values[1], values[2], values[3]);
 
         // .. and append the new Person object to array people
         people.push(person);

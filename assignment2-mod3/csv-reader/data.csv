@@ -1,4 +1,4 @@
-name,age,city
-Alice,25,New York
-Bob,30,Los Angeles
-Charlie,22,Chicago
+name,age,city,phone
+Alice,25,New York,111-222-3333
+Bob,30,Los Angeles,111-333-4444
+Charlie,22,Chicago,222-333-4444
