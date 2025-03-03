@@ -69,6 +69,17 @@ function searchByAge(people, minAge, maxAge = Infinity) {
     return people.filter(person => (person.age >= minAge) && (person.age <= maxAge));
 }
 
+// Search array people by given phone number
+function searchByPhone(people, searchPhone) {
+    /*
+    Return a new array of Person objects;
+    - Iterate through array person
+    -
+    - Compare to determine a match
+    */
+    return people.filter(person => person.phone.includes(searchPhone));
+}
+
 // Call loadCSV function with data.csv file as argument
 const people = loadCSV("data.csv");
 // console.log(`People: ${people}`)
@@ -83,7 +94,7 @@ const searchNameResults = searchByName(people, "Alice");
 console.log("\nSearch results for 'Alice':");
 searchNameResults.forEach(person => console.log(person.getDetails()));
 
-// Call searchByCity function and store resuts in searchResults
+// Call searchByCity function and store resuts in searchCityResults
 const searchCityResults = searchByCity(people, "Chicago");
 // For each element in array person stored in searchCityResults, call getDetails() function
 console.log("\nSearch results for 'Chicago':");
@@ -94,3 +105,9 @@ const searchAgeResults = searchByAge(people, 20, 25);
 // For each element in array person stored in searchAgeResults, call getDetails() function
 console.log("\nSearch results for 20 to 25:");
 searchAgeResults.forEach(person => console.log(person.getDetails()));
+
+// Call searchByPhone function and store resuts in searchPhoneResults
+const searchPhoneResults = searchByPhone(people, "111");
+// For each element in array person stored in searchPhoneResults, call getDetails() function
+console.log("\nSearch results for '111':");
+searchPhoneResults.forEach(person => console.log(person.getDetails()));
