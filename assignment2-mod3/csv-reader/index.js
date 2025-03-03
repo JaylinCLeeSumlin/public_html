@@ -59,6 +59,16 @@ function searchByCity(people, searchCity) {
     return people.filter(person => person.city.toLowerCase() === searchCity.toLowerCase());
 }
 
+// Search array people by given age range
+function searchByAge(people, minAge, maxAge = Infinity) {
+    /*
+    Return a new array of Person objects;
+    - Iterate through array person
+    - Determine if given age falls within given age range
+    */
+    return people.filter(person => (person.age >= minAge) && (person.age <= maxAge));
+}
+
 // Call loadCSV function with data.csv file as argument
 const people = loadCSV("data.csv");
 // console.log(`People: ${people}`)
@@ -69,12 +79,18 @@ people.forEach(person => console.log(person.getDetails()));
 
 // Call searchByName function and store resuts in searchNameResults
 const searchNameResults = searchByName(people, "Alice");
-// for each element in array person stored in searchNameResults, call getDetails() function
+// For each element in array person stored in searchNameResults, call getDetails() function
 console.log("\nSearch results for 'Alice':");
 searchNameResults.forEach(person => console.log(person.getDetails()));
 
 // Call searchByCity function and store resuts in searchResults
 const searchCityResults = searchByCity(people, "Chicago");
-// for each element in array person stored in searchCityResults, call getDetails() function
+// For each element in array person stored in searchCityResults, call getDetails() function
 console.log("\nSearch results for 'Chicago':");
 searchCityResults.forEach(person => console.log(person.getDetails()));
+
+// Call searchByAge function and store resuts in searchAgeResults
+const searchAgeResults = searchByAge(people, 20, 25);
+// For each element in array person stored in searchAgeResults, call getDetails() function
+console.log("\nSearch results for 20 to 25:");
+searchAgeResults.forEach(person => console.log(person.getDetails()));
