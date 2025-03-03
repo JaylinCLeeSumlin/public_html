@@ -11,7 +11,7 @@
 <body>
     <section>
          <h3>Data</h3>
-         <h4> Orders </h4>
+         <h4 class="table-title"> Orders </h4>
           <table>
                <tr>
                     <th> Id </th>
@@ -66,33 +66,42 @@
     
     <section>
          <h3>Revise</h3>
-         <h4> Filter Orders </h4>
+         <h4 class="table-title"> Filter Orders </h4>
           <form action="https://www.randyconnolly.com/tests/process.php" method="GET">
-          <!-- <form action="/assignemnt1-mod3/process.php" method="get"> -->
-               <label for="customer"> Customer </label> <br>
-               <input type="text" id="customer" name="customer"> <br> <br>
+               <div id="customer">
+                    <label for="customer"> Customer </label> <br>
+                    <input type="text" id="customer" name="customer" placeholder="Enter name"> <br> <br>
+               </div>
 
-               <label for="country"> Country </label> <br>
-               <select type="select" id="country" name="country">
-                    <option value="none"> Choose a country </option>
-                    <option value="France"> France </option>
-                    <option value="Germany"> Germany </option>
-                    <option value="England"> England </option>
-               </select> <br> <br>
+               <div id="country">
+                    <label for="country"> Country </label> <br>
+                    <select type="select" id="country" name="country">
+                         <option value="none"> Choose a country </option>
+                         <option value="France"> France </option>
+                         <option value="Germany"> Germany </option>
+                         <option value="England"> England </option>
+                    </select> <br> <br>
+               </div>
 
-               <label for="status"> Status </label> <br>
-               <input type="radio" id="pending" name="status" value="Pending">
-               <label for="pending">Pending</label><br>
-               <input type="radio" id="processing" name="status" value="Processing">
-               <label for="processing">Processing</label><br>
-               <input type="radio" id="shipped" name="status" value="Shipped">
-               <label for="shipped">Shipped</label> <br> <br>
+               <div id="status">
+                    <label for="status"> Status </label> <br>
+                    <input type="radio" id="pending" name="status" value="Pending">
+                    <label for="pending">Pending</label><br>
+                    <input type="radio" id="processing" name="status" value="Processing">
+                    <label for="processing">Processing</label><br>
+                    <input type="radio" id="shipped" name="status" value="Shipped">
+                    <label for="shipped">Shipped</label> <br> <br>
+               </form>
 
-               <label for="order-date"> Order Date </label> <br>
-               <input type="date" id="order-date" name=order-date> <br> <br>
+               <div id="date">
+                    <label for="order-date"> Order Date </label> <br>
+                    <input type="date" id="order-date" name=order-date> <br> <br>
+               </div>
 
-               <input type="submit" value="Submit">
+               <div id="submit">
+                    <input type="submit" value="Submit">
+               </div>
           </form>
     </section>    
 </body>
- </html>
+</html>

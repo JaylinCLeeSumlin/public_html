@@ -31,11 +31,42 @@ section h3 {
     background-color:    #03A9F4;    
 }
 
-
-
 /* table formatting -- you will add these */
 table {
-    max-width: 100%;
+    width: 100%;
+    margin: 20px;
 }
-
-
+th {
+    text-align: left;
+    padding: 10px 0px 20px 10px;
+    /* background-color: pink; */
+}
+td {
+    padding: 10px;
+}
+.table-title {
+    background-color: #607D8B;
+    padding: 10px;
+    margin: 20px;
+    align-content: center;
+}
+/* .order-progress {
+    shape: rectangle;
+} */
+form {
+    border: 1px solid black;
+    border-top: 50px;
+    margin: 20px;
+}
+div {
+    padding: 10px;
+}
+div#submit input {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    font-family: "Roboto", Verdana, Arial, sans-serif;
+}
+div#customer input{
+    padding: 5px 0px 5px 5px;
+}
