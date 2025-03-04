@@ -1,5 +1,15 @@
 class Product {
-    // TODO: constructor
+    constructor(id, title, description, price, rating, sizes, color, imageUrl, category) {
+        this.id = id;
+        this.title = title;
+        this.description = description; 
+        this.price = price;
+        this.rating = rating;
+        this.sizes = sizes;
+        this.color = color;
+        this.imageUrl = imageUrl;
+        this.category = catagory;
+    }
 
     getDetails() {
         return `${this.title} (${this.category}) - $${this.price}, Rating: ${this.rating}`;
