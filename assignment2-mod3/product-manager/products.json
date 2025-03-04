@@ -1,0 +1,223 @@
+[
+
+  {
+
+    "id": 1,
+
+    "title": "Cotton T-Shirt",
+
+    "description": "Comfortable everyday t-shirt",
+
+    "price": 15.99,
+
+    "rating": 4.5,
+
+    "sizes": ["S", "M", "L"],
+
+    "color": "Blue",
+
+    "imageUrl": "https://example.com/tshirt-blue.jpg",
+
+    "category": "Clothing"
+
+  },
+
+  {
+
+    "id": 2,
+
+    "title": "Running Shoes",
+
+    "description": "Lightweight shoes for runners",
+
+    "price": 59.99,
+
+    "rating": 4.8,
+
+    "sizes": ["8", "9", "10"],
+
+    "color": "Black",
+
+    "imageUrl": "https://example.com/running-shoes.jpg",
+
+    "category": "Footwear"
+
+  },
+
+  {
+
+    "id": 3,
+
+    "title": "Leather Wallet",
+
+    "description": "Slim wallet with RFID protection",
+
+    "price": 29.99,
+
+    "rating": 4.2,
+
+    "sizes": ["One Size"],
+
+    "color": "Brown",
+
+    "imageUrl": "https://example.com/wallet-brown.jpg",
+
+    "category": "Accessories"
+
+  },
+
+  {
+
+    "id": 4,
+
+    "title": "Wireless Earbuds",
+
+    "description": "Noise-cancelling earbuds",
+
+    "price": 89.99,
+
+    "rating": 4.7,
+
+    "sizes": ["One Size"],
+
+    "color": "White",
+
+    "imageUrl": "https://example.com/earbuds-white.jpg",
+
+    "category": "Electronics"
+
+  },
+
+  {
+
+    "id": 5,
+
+    "title": "Denim Jeans",
+
+    "description": "Classic straight-fit jeans",
+
+    "price": 39.99,
+
+    "rating": 4.4,
+
+    "sizes": ["30", "32", "34"],
+
+    "color": "Dark Blue",
+
+    "imageUrl": "https://example.com/jeans-darkblue.jpg",
+
+    "category": "Clothing"
+
+  },
+
+  {
+
+    "id": 6,
+
+    "title": "Yoga Mat",
+
+    "description": "Non-slip mat for yoga",
+
+    "price": 24.99,
+
+    "rating": 4.6,
+
+    "sizes": ["One Size"],
+
+    "color": "Purple",
+
+    "imageUrl": "https://example.com/yoga-mat.jpg",
+
+    "category": "Fitness"
+
+  },
+
+  {
+
+    "id": 7,
+
+    "title": "Sunglasses",
+
+    "description": "Polarized UV-protection sunglasses",
+
+    "price": 19.99,
+
+    "rating": 4.3,
+
+    "sizes": ["One Size"],
+
+    "color": "Black",
+
+    "imageUrl": "https://example.com/sunglasses-black.jpg",
+
+    "category": "Accessories"
+
+  },
+
+  {
+
+    "id": 8,
+
+    "title": "Smartwatch",
+
+    "description": "Fitness tracker with heart rate monitor",
+
+    "price": 129.99,
+
+    "rating": 4.9,
+
+    "sizes": ["One Size"],
+
+    "color": "Silver",
+
+    "imageUrl": "https://example.com/smartwatch-silver.jpg",
+
+    "category": "Electronics"
+
+  },
+
+  {
+
+    "id": 9,
+
+    "title": "Backpack",
+
+    "description": "Water-resistant travel backpack",
+
+    "price": 49.99,
+
+    "rating": 4.5,
+
+    "sizes": ["One Size"],
+
+    "color": "Gray",
+
+    "imageUrl": "https://example.com/backpack-gray.jpg",
+
+    "category": "Accessories"
+
+  },
+
+  {
+
+    "id": 10,
+
+    "title": "Hoodie",
+
+    "description": "Warm fleece hoodie",
+
+    "price": 34.99,
+
+    "rating": 4.6,
+
+    "sizes": ["M", "L", "XL"],
+
+    "color": "Red",
+
+    "imageUrl": "https://example.com/hoodie-red.jpg",
+
+    "category": "Clothing"
+
+  }
+
+]
