@@ -8,7 +8,7 @@ class Product {
         this.sizes = sizes;
         this.color = color;
         this.imageUrl = imageUrl;
-        this.category = catagory;
+        this.category = category;
     }
 
     getDetails() {

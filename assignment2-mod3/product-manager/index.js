@@ -1,11 +1,11 @@
 const fs = require("fs");
-const { Products, Inventory} = require("./product")
+const { Product, Inventory} = require("./product")
 
 // Load products from JSON file
 function loadInventory(filepath) {
     const data = fs.readFileSync(filepath, "utf8");
     const jsonData = JSON.parse(data);
-    const products = jsonData.map(p => new Products(
+    const products = jsonData.map(p => new Product(
         p.id,
         p.title,
         p.description,
@@ -23,6 +23,7 @@ function loadInventory(filepath) {
 // Save inventory in JSON file
 function saveInventory(filePath, invenotry) {
     const jsonData = JSON.stringify(invenotry.products, null, 2);
+    console.log(`jsonData: ${jsonData}`)
 
     fs.writeFileSync(filePath, jsonDate);
 }
@@ -33,8 +34,11 @@ const command = args[0];
 
 // Main logic
 const inventory = loadInventory("products.json");
+// console.log("All products:");
+// console.log(inventory)
+
 if (!command) {
-    console.log("Usage node index.js [command] [options]");
+    console.log("Usage: node index.js [command] [options]");
     console.log("Commands: -add, -update, -remove, -search");
     process.exit(1);
 }
@@ -92,5 +96,5 @@ switch (command) {
         results.forEach(p => console.log(p.getDetails()));
         break;
     defult:
-    console.log("Unknown command. Use: -add, -update, -remove, -search")
+        console.log("Unknown command. Use: -add, -update, -remove, -search")
 }
