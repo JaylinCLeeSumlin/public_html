@@ -41,7 +41,9 @@ if (!command) {
 
 switch (command) {
     case "-add":
-        // Example: node index.js -search "T-Shirt" "Casual tee" 19.99 4.5 "S,M,L" "Green" "https://example.com/tshirt.jpg" "Clothing"
+        /* Example: node index.js -search "T-Shirt" "Casual tee" 19.99 4.5 "S,M,L" "Green"
+           "https://example.com/tshirt.jpg" "Clothing"
+        */
         // TODO: code to run process to add product
         break;
     case "-update":

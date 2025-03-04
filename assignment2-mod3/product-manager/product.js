@@ -22,7 +22,7 @@ class Inventory {
     }
 
     addProduct(product) {
-        // TODO: code to add product
+        this.products.push(product);
     }
 
     updateProduct(id, updateData) {
