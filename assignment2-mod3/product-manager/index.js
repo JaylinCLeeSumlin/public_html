@@ -107,6 +107,15 @@ switch (command) {
     case "-remove":
         // Example: node index.js -remove 1
         // TODO: code to run process to remove product
+
+        idToRemove = args[1];
+        [removed, product] = inventory.removeProduct(idToRemove)
+        if (removed) {
+            saveInventory("products.json", inventory);
+            console.log(`Product removed ${product}`);
+        } else {
+            console.log(`Product of id ${idToRemove} not found.`);
+        }
         break;
     case "-search":
         // Example: node index.js -search name "T-Shirt"
@@ -133,5 +142,5 @@ switch (command) {
         results.forEach(p => console.log(p.getDetails()));
         break;
     defult:
-        console.log("Unknown command. Use: -add, -update, -remove, -search")
-}
+        console.log("Unknown command. Use: -add, -update, -remove, -search");
+} 

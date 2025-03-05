@@ -37,6 +37,18 @@ class Inventory {
 
     removeProduct(id) {
         // TODO: code to remove product
+
+        const productIndex = this.products.findIndex(p => p.id == id);
+        const product = this.products.find(p => p.id == id);
+        // console.log(`Before removal:\n${this.products.length}`);
+
+        if (productIndex !== -1) {
+            this.products.splice(productIndex, 1);
+            // console.log(`After removal:\n${this.products.length}`);
+            return [true, product.getDetails()];
+        } else {
+            return [false, null];
+        }
     }
 
     searchByName(name) {

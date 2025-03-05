@@ -136,20 +136,5 @@
     "color": "Red",
     "imageUrl": "https://example.com/hoodie-red.jpg",
     "category": "Clothing"
-  },
-  {
-    "id": 11,
-    "title": "T-Shirt",
-    "description": "Casual tee",
-    "price": 19.99,
-    "rating": 4.5,
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "color": "Green",
-    "imageUrl": "https://example.com/tshirt.jpg",
-    "category": "Clothing"
   }
 ]
