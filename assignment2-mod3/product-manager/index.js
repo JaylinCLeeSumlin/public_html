@@ -23,7 +23,6 @@ function loadInventory(filepath) {
 // Save inventory in JSON file
 function saveInventory(filePath, invenotry) {
     const jsonData = JSON.stringify(invenotry.products, null, 2);
-    // console.log(`jsonData: ${jsonData}`)
 
     fs.writeFileSync(filePath, jsonData);
 }
@@ -34,8 +33,6 @@ const command = args[0];
 
 // Main logic
 const inventory = loadInventory("products.json");
-// console.log("All products:");
-// console.log(inventory)
 
 if (!command) {
     console.log("Usage: node index.js [command] [options]");
@@ -45,19 +42,7 @@ if (!command) {
 
 switch (command) {
     case "-add":
-        /* Example: node index.js -add "T-Shirt" "Casual tee" 19.99 4.5 "S,M,L" "Green"
-           "https://example.com/tshirt.jpg" "Clothing"
-           
-            "id": number --> number (int)
-            "title": "Cotton T-Shirt" --> string
-            "description": "Comfortable everyday t-shirt" --> string
-            "price": 15.99 --> number (float)
-            "rating": 4.5 --> number (float)
-            "sizes": ["S","M","L"] --> array of strings
-            "color": "Blue" --> string
-            "imageUrl": "https://example.com/tshirt-blue.jpg" --> string
-            "category": "Clothing" --> string
-        */
+        // Example: node index.js -add "T-Shirt" "Casual tee" 19.99 4.5 "S,M,L" "Green"
         var p = {
             id: null,
             title: null,
@@ -70,7 +55,6 @@ switch (command) {
             category: null
         };
 
-        const keys = Object.keys(p);
         p.id = (inventory.products[inventory.products.length - 1].id) + 1;
         p.title = args[1];
         p.description = args[2];
@@ -135,7 +119,6 @@ switch (command) {
                 console.log("Search type must be: name, category, or rating");
                 process.exit(1);
         }
-
         console.log("Search results:");
         searchResults.forEach(p => console.log(p.getDetails()));
         break;
@@ -144,7 +127,6 @@ switch (command) {
         inventory.listAllProducts();
         break;
     case "-sort":
-        // console.log(`args: ${args}`);
         sortType = args[1];
         let sortResults;
         switch (sortType) {
