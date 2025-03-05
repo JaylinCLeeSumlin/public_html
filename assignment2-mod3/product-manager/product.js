@@ -61,6 +61,8 @@ class Inventory {
 
     searchByRating(minRating) {
         // TODO: code to search products by rating
+        const result = this.products.filter(p => p.rating >= minRating);
+        return result;
     }
 }
 

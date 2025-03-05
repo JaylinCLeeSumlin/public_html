@@ -131,7 +131,7 @@ switch (command) {
                 results = inventory.searchByCategory(value);
                 break;
             case "rating":
-                results = inventory.searchByRating(praseFloat(value));
+                results = inventory.searchByRating(parseFloat(value));
                 break;
             default:
                 console.log("Search type must be: name, category, or rating");
