@@ -50,7 +50,7 @@ class Inventory {
     }
 
     searchByName(name) {
-        const result = this.products.filter(p => p.title.toLowerCase() == name.toLowerCase());
+        const result = this.products.filter(p => p.title.toLowerCase().includes(name.toLowerCase()));
         return result;
     }
 

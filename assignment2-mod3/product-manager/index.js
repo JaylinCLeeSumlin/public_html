@@ -140,7 +140,6 @@ switch (command) {
         results.forEach(p => console.log(p.getDetails()));
         break;
     case "-list":
-        console.log(`command: ${command}`);
         inventory.listAllProducts();
         break;
     default:
