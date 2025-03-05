@@ -64,6 +64,34 @@ class Inventory {
         return result;
     }
 
+    sortByPrice(priceSort) {
+        var priceResults;
+        switch (priceSort) {
+            case "up":
+                priceResults = this.products.sort((a, b) => a.price - b.price);
+                return priceResults;
+                break;
+            case "down":
+                priceResults = this.products.sort((a, b) => b.price - a.price);
+                return priceResults;
+                break;
+        }
+    }
+
+    sortByRating(rateSort) {
+        var rateResults;
+        switch (rateSort) {
+            case "up":
+                rateResults = this.products.sort((a, b) => a.rating - b.rating);
+                return rateResults;
+                break;
+            case "down":
+                rateResults = this.products.sort((a, b) => b.rating - a.rating);
+                return rateResults;
+                break;
+        }
+    }
+
     listAllProducts() {
         this.products.forEach(p => console.log(p.getDetails()));
     }

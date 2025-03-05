@@ -15,19 +15,30 @@
     "category": "Clothing"
   },
   {
-    "id": 2,
-    "title": "Running Shoes",
-    "description": "Lightweight shoes for runners",
-    "price": 59.99,
-    "rating": 4.8,
+    "id": 7,
+    "title": "Sunglasses",
+    "description": "Polarized UV-protection sunglasses",
+    "price": 19.99,
+    "rating": 4.3,
     "sizes": [
-      "8",
-      "9",
-      "10"
+      "One Size"
     ],
     "color": "Black",
-    "imageUrl": "https://example.com/running-shoes.jpg",
-    "category": "Footwear"
+    "imageUrl": "https://example.com/sunglasses-black.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 6,
+    "title": "Yoga Mat",
+    "description": "Non-slip mat for yoga",
+    "price": 24.99,
+    "rating": 4.6,
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Purple",
+    "imageUrl": "https://example.com/yoga-mat.jpg",
+    "category": "Fitness"
   },
   {
     "id": 3,
@@ -43,17 +54,19 @@
     "category": "Accessories"
   },
   {
-    "id": 4,
-    "title": "Wireless Earbuds",
-    "description": "Noise-cancelling earbuds",
-    "price": 89.99,
-    "rating": 4.7,
+    "id": 10,
+    "title": "Hoodie",
+    "description": "Warm fleece hoodie",
+    "price": 34.99,
+    "rating": 4.6,
     "sizes": [
-      "One Size"
+      "M",
+      "L",
+      "XL"
     ],
-    "color": "White",
-    "imageUrl": "https://example.com/earbuds-white.jpg",
-    "category": "Electronics"
+    "color": "Red",
+    "imageUrl": "https://example.com/hoodie-red.jpg",
+    "category": "Clothing"
   },
   {
     "id": 5,
@@ -71,45 +84,6 @@
     "category": "Clothing"
   },
   {
-    "id": 6,
-    "title": "Yoga Mat",
-    "description": "Non-slip mat for yoga",
-    "price": 24.99,
-    "rating": 4.6,
-    "sizes": [
-      "One Size"
-    ],
-    "color": "Purple",
-    "imageUrl": "https://example.com/yoga-mat.jpg",
-    "category": "Fitness"
-  },
-  {
-    "id": 7,
-    "title": "Sunglasses",
-    "description": "Polarized UV-protection sunglasses",
-    "price": 19.99,
-    "rating": 4.3,
-    "sizes": [
-      "One Size"
-    ],
-    "color": "Black",
-    "imageUrl": "https://example.com/sunglasses-black.jpg",
-    "category": "Accessories"
-  },
-  {
-    "id": 8,
-    "title": "Smartwatch",
-    "description": "Fitness tracker with heart rate monitor",
-    "price": 129.99,
-    "rating": 4.9,
-    "sizes": [
-      "One Size"
-    ],
-    "color": "Silver",
-    "imageUrl": "https://example.com/smartwatch-silver.jpg",
-    "category": "Electronics"
-  },
-  {
     "id": 9,
     "title": "Backpack",
     "description": "Water-resistant travel backpack",
@@ -123,18 +97,44 @@
     "category": "Accessories"
   },
   {
-    "id": 10,
-    "title": "Hoodie",
-    "description": "Warm fleece hoodie",
-    "price": 34.99,
-    "rating": 4.6,
+    "id": 2,
+    "title": "Running Shoes",
+    "description": "Lightweight shoes for runners",
+    "price": 59.99,
+    "rating": 4.8,
     "sizes": [
-      "M",
-      "L",
-      "XL"
+      "8",
+      "9",
+      "10"
     ],
-    "color": "Red",
-    "imageUrl": "https://example.com/hoodie-red.jpg",
-    "category": "Clothing"
+    "color": "Black",
+    "imageUrl": "https://example.com/running-shoes.jpg",
+    "category": "Footwear"
+  },
+  {
+    "id": 4,
+    "title": "Wireless Earbuds",
+    "description": "Noise-cancelling earbuds",
+    "price": 89.99,
+    "rating": 4.7,
+    "sizes": [
+      "One Size"
+    ],
+    "color": "White",
+    "imageUrl": "https://example.com/earbuds-white.jpg",
+    "category": "Electronics"
+  },
+  {
+    "id": 8,
+    "title": "Smartwatch",
+    "description": "Fitness tracker with heart rate monitor",
+    "price": 129.99,
+    "rating": 4.9,
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Silver",
+    "imageUrl": "https://example.com/smartwatch-silver.jpg",
+    "category": "Electronics"
   }
 ]

@@ -39,7 +39,7 @@ const inventory = loadInventory("products.json");
 
 if (!command) {
     console.log("Usage: node index.js [command] [options]");
-    console.log("Commands: -add, -update, -remove, -search, -list");
+    console.log("Commands: -add, -update, -remove, -search, -list, -sort");
     process.exit(1);
 }
 
@@ -117,19 +117,19 @@ switch (command) {
         break;
     case "-search":
         const [type, value] = args.slice(1);
-        let results;
+        let searchResults;
         switch (type) {
             // Example: node index.js -search name "T-Shirt"
             case "name":
-                results = inventory.searchByName(value);
+                searchResults = inventory.searchByName(value);
                 break;
             // Example: node index.js -search category "Clothing"
             case "category":
-                results = inventory.searchByCategory(value);
+                searchResults = inventory.searchByCategory(value);
                 break;
             // Example: node index.js -search rating 4.5
             case "rating":
-                results = inventory.searchByRating(parseFloat(value));
+                searchResults = inventory.searchByRating(parseFloat(value));
                 break;
             default:
                 console.log("Search type must be: name, category, or rating");
@@ -137,11 +137,33 @@ switch (command) {
         }
 
         console.log("Search results:");
-        results.forEach(p => console.log(p.getDetails()));
+        searchResults.forEach(p => console.log(p.getDetails()));
         break;
     case "-list":
+        // Example: node index.js -list
         inventory.listAllProducts();
         break;
+    case "-sort":
+        // console.log(`args: ${args}`);
+        sortType = args[1];
+        let sortResults;
+        switch (sortType) {
+            case "price":
+                // Example: node index.js -sort price up
+                // Example: node index.js -sort price down
+                var priceSort = args[2];
+                sortResults = inventory.sortByPrice(priceSort);
+                break;
+            case "rating":
+                // Example: node index.js -sort rating up
+                // Example: node index.js -sort rating down
+                var rateSort = args[2];
+                sortResults = inventory.sortByRating(rateSort);
+                break;
+        }
+        console.log("Sorted results:");
+        sortResults.forEach(p => console.log(p.getDetails()));
+        break;
     default:
-        console.log("Unknown command. Use: -add, -update, -remove, -search, -list");
+        console.log("Unknown command. Use: -add, -update, -remove, -search, -list, -sort");
 } 
