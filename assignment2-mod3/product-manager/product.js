@@ -36,8 +36,6 @@ class Inventory {
     }
 
     removeProduct(id) {
-        // TODO: code to remove product
-
         const productIndex = this.products.findIndex(p => p.id == id);
         const product = this.products.find(p => p.id == id);
         // console.log(`Before removal:\n${this.products.length}`);
@@ -52,7 +50,8 @@ class Inventory {
     }
 
     searchByName(name) {
-        // TODO: code to search products by name
+        const result = this.products.filter(p => p.title.toLowerCase() == name.toLowerCase());
+        return result;
     }
 
     searchByCategory(category) {
