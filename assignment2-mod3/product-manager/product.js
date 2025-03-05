@@ -55,7 +55,8 @@ class Inventory {
     }
 
     searchByCategory(category) {
-        // TODO: code to search products by category
+        const result = this.products.filter(p => p.category.toLowerCase() == category.toLowerCase());
+        return result;
     }
 
     searchByRating(minRating) {
