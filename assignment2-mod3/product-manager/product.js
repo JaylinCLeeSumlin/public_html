@@ -60,10 +60,13 @@ class Inventory {
     }
 
     searchByRating(minRating) {
-        // TODO: code to search products by rating
         const result = this.products.filter(p => p.rating >= minRating);
         return result;
     }
+
+    listAllProducts() {
+        this.products.forEach(p => console.log(p.getDetails()));
+    }
 }
 
-module.exports = { Product, Inventory};
+module.exports = { Product, Inventory };

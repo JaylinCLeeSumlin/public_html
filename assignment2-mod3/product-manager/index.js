@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { Product, Inventory} = require("./product")
+const { Product, Inventory } = require("./product")
 
 // Load products from JSON file
 function loadInventory(filepath) {
@@ -39,7 +39,7 @@ const inventory = loadInventory("products.json");
 
 if (!command) {
     console.log("Usage: node index.js [command] [options]");
-    console.log("Commands: -add, -update, -remove, -search");
+    console.log("Commands: -add, -update, -remove, -search, -list");
     process.exit(1);
 }
 
@@ -106,8 +106,6 @@ switch (command) {
         break;
     case "-remove":
         // Example: node index.js -remove 1
-        // TODO: code to run process to remove product
-
         idToRemove = args[1];
         [removed, product] = inventory.removeProduct(idToRemove)
         if (removed) {
@@ -118,18 +116,18 @@ switch (command) {
         }
         break;
     case "-search":
-        // Example: node index.js -search name "T-Shirt"
-        // Example: node index.js -search category "Clothing"
-        // Example: node index.js -search rating 4.5
         const [type, value] = args.slice(1);
         let results;
         switch (type) {
+            // Example: node index.js -search name "T-Shirt"
             case "name":
                 results = inventory.searchByName(value);
                 break;
+            // Example: node index.js -search category "Clothing"
             case "category":
                 results = inventory.searchByCategory(value);
                 break;
+            // Example: node index.js -search rating 4.5
             case "rating":
                 results = inventory.searchByRating(parseFloat(value));
                 break;
@@ -141,6 +139,10 @@ switch (command) {
         console.log("Search results:");
         results.forEach(p => console.log(p.getDetails()));
         break;
-    defult:
-        console.log("Unknown command. Use: -add, -update, -remove, -search");
+    case "-list":
+        console.log(`command: ${command}`);
+        inventory.listAllProducts();
+        break;
+    default:
+        console.log("Unknown command. Use: -add, -update, -remove, -search, -list");
 } 
