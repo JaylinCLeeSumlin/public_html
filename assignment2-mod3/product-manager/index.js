@@ -26,9 +26,13 @@ function loadInventory(filepath) {
 
 // Save inventory in JSON file
 function saveInventory(filePath, invenotry) {
-    const jsonData = JSON.stringify(invenotry.products, null, 2);
-
-    fs.writeFileSync(filePath, jsonData);
+    try {
+        const jsonData = JSON.stringify(invenotry.products, null, 2);
+        fs.writeFileSync(filePath, jsonData);
+    } catch (err) {
+        console.log("Error while attempting to write to file.");
+        process.exit(1);
+    }
 }
 
 // Parse CLI arguments
