@@ -50,7 +50,7 @@ if (!command) {
 
 switch (command) {
     case "-add":
-        // Example: node index.js -add "T-Shirt" "Casual tee" 19.99 4.5 "S,M,L" "Green"
+        // Example: node index.js -add "T-Shirt" "Casual tee" 19.99 4.5 "S,M,L" "Green" "https://exmaple.tshirt.jpg" "Clothing"
         var p = {
             id: null,
             title: null,
@@ -62,23 +62,32 @@ switch (command) {
             imageUrl: null,
             category: null
         };
+        if (args.length < 9 || args.length > 9) {
+            if (args.length < 9) {
+                console.log("Missing product attributes.");
+            } else {
+                console.log("Too many product attributes.");
+            }
+            console.log("Usage: node index.js -add \"title\" \"description\" price rating \"sizes\" \"color\" \"imageURL\" \"category\"");
+            process.exit(1);
+        } else {
+            p.id = (inventory.products[inventory.products.length - 1].id) + 1;
+            p.title = args[1];
+            p.description = args[2];
+            p.price = parseFloat(args[3]);
+            p.rating = parseFloat(args[4]);
+            p.sizes = args[5].split(",");
+            p.color = args[6];
+            p.imageUrl = args[7];
+            p.category = args[8];
 
-        p.id = (inventory.products[inventory.products.length - 1].id) + 1;
-        p.title = args[1];
-        p.description = args[2];
-        p.price = parseFloat(args[3]);
-        p.rating = parseFloat(args[4]);
-        p.sizes = args[5].split(",");
-        p.color = args[6];
-        p.imageUrl = args[7];
-        p.category = args[8];
+            inventory.addProduct(p);
+            saveInventory("products.json", inventory);
 
-        inventory.addProduct(p);
-        saveInventory("products.json", inventory);
-
-        console.log(`New product:`);
-        console.log(inventory.products[inventory.products.length - 1]);
-        break;
+            console.log(`New product:`);
+            console.log(inventory.products[inventory.products.length - 1]);
+            break;
+        }
     case "-update":
         // Example: node index.js -update 1 price=25.99 rating=4.8
         const idToUpdate = parseInt(args[1]);
