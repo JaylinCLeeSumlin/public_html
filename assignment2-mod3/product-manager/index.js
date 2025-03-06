@@ -107,6 +107,16 @@ switch (command) {
         break;
     case "-remove":
         // Example: node index.js -remove 1
+        if (args.length < 2) {
+            console.log("Missing ID to remove");
+            console.log("Usage: node index.js -remove ID");
+            process.exit(1);
+        }
+        if (!parseInt(args[1])) {
+            console.log("ID to remove must be an integer");
+            process.exit(1);
+        }
+
         idToRemove = args[1];
         [removed, product] = inventory.removeProduct(idToRemove)
         if (removed) {
