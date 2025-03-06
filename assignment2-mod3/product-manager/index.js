@@ -164,20 +164,34 @@ switch (command) {
         inventory.listAllProducts();
         break;
     case "-sort":
+        if (args.length < 2) {
+            console.log("Not enough information provided");
+            console.log("Usage: node index.js -sort [sortBy] [sortType]");
+            process.exit(1);
+        }
+
         sortType = args[1];
         let sortResults;
         switch (sortType) {
             case "price":
                 // Example: node index.js -sort price up
                 // Example: node index.js -sort price down
-                var priceSort = args[2];
-                sortResults = inventory.sortByPrice(priceSort);
+                if (args.length >= 3) {
+                    var priceSort = args[2];
+                    sortResults = inventory.sortByPrice(priceSort);
+                } else {
+                    sortResults = inventory.sortByPrice();
+                }
                 break;
             case "rating":
                 // Example: node index.js -sort rating up
                 // Example: node index.js -sort rating down
-                var rateSort = args[2];
-                sortResults = inventory.sortByRating(rateSort);
+                if (args.length >= 3) {
+                    var rateSort = args[2];
+                    sortResults = inventory.sortByRating(rateSort);
+                } else {
+                    sortResults = inventory.sortByRating();
+                }
                 break;
         }
         console.log("Sorted results:");

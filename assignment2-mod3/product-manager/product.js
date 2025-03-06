@@ -62,7 +62,7 @@ class Inventory {
         return result;
     }
 
-    sortByPrice(priceSort) {
+    sortByPrice(priceSort="up") {
         var priceResults;
         switch (priceSort) {
             case "up":
@@ -76,7 +76,7 @@ class Inventory {
         }
     }
 
-    sortByRating(rateSort) {
+    sortByRating(rateSort="up") {
         var rateResults;
         switch (rateSort) {
             case "up":
