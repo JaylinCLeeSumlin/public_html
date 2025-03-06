@@ -127,6 +127,11 @@ switch (command) {
         }
         break;
     case "-search":
+        if (args.length < 3) {
+            console.log("Not enough information provided");
+            console.log("Usage: node index.js -search [searchType] [searchFor]");
+        }
+
         const [type, value] = args.slice(1);
         let searchResults;
         switch (type) {
@@ -146,8 +151,13 @@ switch (command) {
                 console.log("Search type must be: name, category, or rating");
                 process.exit(1);
         }
-        console.log("Search results:");
-        searchResults.forEach(p => console.log(p.getDetails()));
+
+        if (searchResults.length > 0) {
+            console.log("Search results:");
+            searchResults.forEach(p => console.log(p.getDetails()));
+        } else {
+            console.log("No products found.")
+        }
         break;
     case "-list":
         // Example: node index.js -list
