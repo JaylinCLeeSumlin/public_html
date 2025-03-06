@@ -3,21 +3,25 @@ const { Product, Inventory } = require("./product")
 
 // Load products from JSON file
 function loadInventory(filepath) {
-    const data = fs.readFileSync(filepath, "utf8");
-    const jsonData = JSON.parse(data);
-    const products = jsonData.map(p => new Product(
-        p.id,
-        p.title,
-        p.description,
-        p.price,
-        p.rating,
-        p.sizes,
-        p.color,
-        p.imageUrl,
-        p.category
-    ));
-
-    return new Inventory(products);
+    try {
+        const data = fs.readFileSync(filepath, "utf8");
+        const jsonData = JSON.parse(data);
+        const products = jsonData.map(p => new Product(
+            p.id,
+            p.title,
+            p.description,
+            p.price,
+            p.rating,
+            p.sizes,
+            p.color,
+            p.imageUrl,
+            p.category
+        ));
+        return new Inventory(products);
+    } catch (err) {
+        console.log("Error while attempting to read file.");
+        process.exit(1);
+    }
 }
 
 // Save inventory in JSON file
