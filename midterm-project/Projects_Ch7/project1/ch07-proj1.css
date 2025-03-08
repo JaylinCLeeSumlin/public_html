@@ -16,7 +16,9 @@ header {
    padding: 0 var(--spacer-base);
    background-color: var(--color-back-dark);
    height: var(--header-height);
-
+    display: flex;
+    justify-content: space-between;
+    align-items:center
 }
 header h1 {
     margin: 0;   
@@ -42,7 +44,8 @@ button {
 .card {
 	background: white;
 	margin-bottom: 2em;	
-    padding: 0;
+    padding: 5px;
+    width: 24%;
    
 }
 .card-content p {
@@ -57,7 +60,26 @@ button {
 
 
 /* add your styles here */
-
+.container {
+    align-items: center;
+    justify-content: center;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.card:hover {
+    filter: saturate(150%);
+    box-shadow: inset;
+}
+article.card div.card-actions:hover {
+    opacity: 1;
+    transition: 1s;
+}
+main section article img {
+    max-width: 100%;
+}
 
 
 

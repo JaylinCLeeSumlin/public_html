@@ -14,14 +14,19 @@ h1, h2, h3, nav, footer {
 body {
    font-family: "Open Sans", Verdana, Arial, sans-serif;
    font-size: 100%;
-
-
+    background-image: linear-gradient(rgb(38, 4, 83), white);
 }
 header {
     padding: 15px;
     width: auto; 
     margin: 0 0;
- 
+    background: repeating-linear-gradient(
+        45deg, 
+        rgb(38, 4, 83), /* First color */
+        rgb(38, 4, 83) 15px, 
+        black 10px, 
+        black 20px /* Second color */
+    );
 
     height: 50px;
 }
@@ -31,7 +36,7 @@ header h2 {
     margin-left:10px;
 }
 header nav {
-     float: right;  
+    float: right;  
     margin: 10px 15px 10px 10px;
     top: 5px;
 }
@@ -40,24 +45,22 @@ main {
     margin: 20px 10px;
 }
 
-
 section {
    margin: 1em auto;
    clear: left;
-   
-   width: 90%;    
+   width: 90%;   
+   display: inline-flex;
 }
 
 section h1 {
-   margin-left: 1.5em; 
+    margin-left: 1.5em; 
     font-size: 24pt;
+    display: grid; 
 }
-
 
 figure {
     float: left; 
     width: 490px;
-
 }
 figcaption {
    margin-bottom: 1em;   
