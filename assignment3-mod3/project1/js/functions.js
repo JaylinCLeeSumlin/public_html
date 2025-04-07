@@ -11,16 +11,16 @@ function outputCartRow(item, total) {
 
    const tableBody = document.querySelector("tbody");
 
-   let row = document.createElement("tr");
-   row.innerHTML = `
-       <td><img src="images/${item.product.filename}" alt="${item.title}"></td>
-       <td> ${item.product.title} </td>
-       <td> ${item.quantity} </td>
-       <td> $${item.product.price.toFixed(2)}</td>
-       <td> $${total.toFixed(2)} </td>
-   `;
+   document.write(`
+      <tr>
+          <td><img src="images/${item.product.filename}" alt="${item.product.title}"></td>
+          <td>${item.product.title}</td>
+          <td>${item.quantity}</td>
+          <td>$${item.product.price.toFixed(2)}</td>
+          <td>$${total.toFixed(2)}</td>
+      </tr>
+  `);
 
-   tableBody.insertBefore(row, document.querySelector(".totals"));
 }
 
 function outputSubtotal(subtotal) {
@@ -37,7 +37,12 @@ function outputSubtotal(subtotal) {
    // console.log(`subtotalRow found: ${subtotalRow ? "Yes" : "No"}`);
 
    if (subtotalRow) {
-      subtotalRow.textContent = `$${subtotal.toFixed(2)}`;
+      document.write(`
+         <tr class="totals">
+            <td colspan="4">Subtotal</td>
+            <td>$${subtotal.toFixed(2)}</td>
+        </tr>
+     `);
    } else {
       console.error("Subtotal row not found!");
    }
@@ -60,7 +65,12 @@ function outputTax(subtotal, tax_rate) {
    var tax = calculateTax(subtotal, tax_rate);
 
    if (taxRow) {
-      taxRow.textContent = `$${tax.toFixed(2)}`;
+      document.write(`
+         <tr class="totals">
+            <td colspan="4">Tax</td>
+            <td>$${tax.toFixed(2)}</td>
+        </tr>
+     `);
    } else {
       console.error("Tax row not found!");
    }
@@ -86,7 +96,12 @@ function outputShipping(subtotal, shipping_threshold) {
    }
 
    if (shippingRow) {
-      shippingRow.textContent = `$${shipping.toFixed(2)}`;
+      document.write(`
+         <tr class="totals">
+            <td colspan="4">Shipping</td>
+            <td>$${shipping.toFixed(2)}</td>
+        </tr>
+     `);
    } else {
       console.error("Shipping row not found!");
    }
@@ -109,7 +124,12 @@ function outputGrandTotal(subtotal, tax, shipping) {
    var grandTotal = subtotal + tax + shipping;
 
    if (grandTotalRow) {
-      grandTotalRow.textContent = `$${grandTotal.toFixed(2)}`;
+      document.write(`
+         <tr class="totals">
+            <td colspan="4">Grand Total</td>
+            <td>$${grandTotal.toFixed(2)}</td>
+        </tr>
+     `);
    } else {
       console.error("Grand Total row not found!");
    }
