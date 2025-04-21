@@ -8,78 +8,78 @@
         "name":"Candystripe",
         "price": 10.00,
         "num_colors": 3,
-        "design":"",
+        "design":""
     },
     {
         "id":2,
         "category":"100",
-        "image":["candystripe-7colors(1).png"],
+        "image":"candystripe-7colors(1)",
         "name":"Candystripe",
         "price": 10.00,
         "num_colors": 7,
-        "design":"candystripe-7colors-design(5).png",
+        "design":"candystripe-7colors-design(5)"
     },
     {
         "id":3,
         "category":"100",
-        "image":["candystripe-7colors(2).png"],
+        "image":"candystripe-7colors(2)",
         "name":"Candystripe",
         "price": 10.00,
         "num_colors": 7,
-        "design":"candystripe-7colors-design(2).png",
+        "design":"candystripe-7colors-design(2)"
     },
     {
         "id":4,
         "category":"100",
-        "image":["candystripe-9colors(1).png"],
+        "image":"candystripe-9colors(1)",
         "name":"Candystripe",
         "price": 10.00,
         "num_colors": 9,
-        "design":"",
+        "design":""
     },
     {
         "id":5,
         "category":"200",
-        "image":["chevron-3colors(1).png"],
+        "image":"chevron-3colors(1)",
         "name":"Chevron",
         "price": 15.00,
         "num_colors": 3,
-        "design":"",
+        "design":""
     },
     {
         "id":6,
         "category":"200",
-        "image":["chevron-5colors(1).png"],
+        "image":"chevron-5colors(1)",
         "name":"Chevron",
         "price": 15.00,
         "num_colors": 5,
-        "design":"chevron-5colors-design(4).png",
+        "design":"chevron-5colors-design(4)"
     },
     {
         "id":7,
         "category":"200",
-        "image":["chevron-7colors(1).png"],
+        "image":"chevron-7colors(1)",
         "name":"Chevron",
         "price": 15.00,
         "num_colors": 7,
-        "design":"",
+        "design":""
     },
     {
         "id":8,
         "category":"300",
-        "image":["braid-2colors(1).png"],
+        "image":"braid-2colors(1)",
         "name":"Braid",
         "price": 20.00,
         "num_colors": 2,
-        "design":"",
+        "design":""
     },
     {
         "id":9,
         "category":"300",
-        "image":["braid-3colors(1).png"],
+        "image":"braid-3colors(1)",
         "name":"Braid",
         "price": 20.00,
         "num_colors": 3,
-        "design":"",
-    },
-  ]
+        "design":""
+    }
+]}

@@ -1,0 +1,236 @@
+{
+    "description":"Friendship Bracelets Designs",
+    "designs":[
+      {
+          "id":1,
+          "category":"100",
+          "image":"candystripe-7colors-design(1)",
+          "name":"Candystripe Design",
+          "price": 10.00,
+          "num_colors": 7
+      },
+      {
+          "id":2,
+          "category":"100",
+          "image":"candystripe-7colors-design(2)",
+          "name":"Candystripe Design",
+          "price": 10.00,
+          "num_colors": 7
+      },
+      {
+          "id":3,
+          "category":"100",
+          "image":"candystripe-7colors-design(3)",
+          "name":"Candystripe Design",
+          "price": 10.00,
+          "num_colors": 7
+      },
+      {
+        "id":4,
+          "category":"100",
+          "image":"candystripe-7colors-design(4)",
+          "name":"Candystripe Design",
+          "price": 10.00,
+          "num_colors": 7
+      }, 
+      {
+          "id":5,
+          "category":"100",
+          "image":"candystripe-7colors-design(5)",
+          "name":"Candystripe Design",
+          "price": 10.00,
+          "num_colors": 7
+      },
+      {
+          "id":6,
+          "category":"100",
+          "image":"candystripe-8colors-design(1)",
+          "name":"Candystripe Design",
+          "price": 10.00,
+          "num_colors": 8
+      },
+      {
+          "id":7,
+          "category":"100",
+          "image":"candystripe-8colors-design(2)",
+          "name":"Candystripe Design",
+          "price": 10.00,
+          "num_colors": 8
+      },
+      {
+          "id":8,
+          "category":"100",
+          "image":"candystripe-9colors-design(1)",
+          "name":"Candystripe Design",
+          "price": 10.00,
+          "num_colors": 9
+      },
+      {
+          "id":9,
+          "category":"200",
+          "image":"cheveron-4colors-design(1)",
+          "name":"Chevron Design",
+          "price": 15.00,
+          "num_colors": 4
+      },
+      {
+          "id":10,
+          "category":"200",
+          "image":"cheveron-4colors-design(2)",
+          "name":"Chevron Design",
+          "price": 15.00,
+          "num_colors": 4
+      },
+      {
+          "id":11,
+          "category":"200",
+          "image":"cheveron-5colors-design(1)",
+          "name":"Chevron Design",
+          "price": 15.00,
+          "num_colors": 5
+      },
+      {
+          "id":12,
+          "category":"200",
+          "image":"cheveron-5colors-design(2)",
+          "name":"Chevron Design",
+          "price": 15.00,
+          "num_colors": 5
+      },
+      {
+          "id":13,
+          "category":"200",
+          "image":"cheveron-5colors-design(3)",
+          "name":"Chevron Design",
+          "price": 15.00,
+          "num_colors": 5
+      },
+      {
+          "id":14,
+          "category":"200",
+          "image":"cheveron-6colors-design(1)",
+          "name":"Chevron Design",
+          "price": 15.00,
+          "num_colors": 6
+      },
+      {
+          "id":15,
+          "category":"200",
+          "image":"cheveron-6colors-design(2)",
+          "name":"Chevron Design",
+          "price": 15.00,
+          "num_colors": 6
+      },
+      {
+          "id":16,
+          "category":"200",
+          "image":"cheveron-7colors-design(1)",
+          "name":"Chevron Design",
+          "price": 15.00,
+          "num_colors": 7
+      },
+      {
+          "id":17,
+          "category":"200",
+          "image":"cheveron-7colors-design(2)",
+          "name":"Chevron Design",
+          "price": 15.00,
+          "num_colors": 7
+      },
+      {
+          "id":18,
+          "category":"200",
+          "image":"cheveron-7colors-design(3)",
+          "name":"Chevron Design",
+          "price": 15.00,
+          "num_colors": 7
+      },
+      {
+          "id":19,
+          "category":"200",
+          "image":"cheveron-8colors-design(1)",
+          "name":"Chevron Design",
+          "price": 15.00,
+          "num_colors": 8
+      },
+      {
+          "id":20,
+          "category":"300",
+          "image":"braid-5colors-design(1)",
+          "name":"braid Design",
+          "price": 20.00,
+          "num_colors": 5
+      },
+      {
+          "id":21,
+          "category":"400",
+          "image":"heart-2colors-design(1)",
+          "name":"Heart Design",
+          "price": 25.00,
+          "num_colors": 2
+      },
+      {
+          "id":22,
+          "category":"400",
+          "image":"heart-6colors-design(1)",
+          "name":"Heart Design",
+          "price": 25.00,
+          "num_colors": 6
+      },
+      {
+          "id":23,
+          "category":"500",
+          "image":"specialty-2colors-design(1)",
+          "name":"Specialty Design",
+          "price": 30.00,
+          "num_colors": 2
+      },
+      {
+          "id":24,
+          "category":"500",
+          "image":"specialty-4colors-design(1)",
+          "name":"Specialty Design",
+          "price": 30.00,
+          "num_colors": 4
+      },
+      {
+          "id":25,
+          "category":"500",
+          "image":"specialty-5colors-design(1)",
+          "name":"Specialty Design",
+          "price": 30.00,
+          "num_colors": 5
+      },
+      {
+          "id":26,
+          "category":"500",
+          "image":"specialty-6colors-design(1)",
+          "name":"Specialty Design",
+          "price": 30.00,
+          "num_colors": 6
+      },
+      {
+          "id":27,
+          "category":"500",
+          "image":"specialty-7colors-design(1)",
+          "name":"Specialty Design",
+          "price": 30.00,
+          "num_colors": 7
+      },
+      {
+          "id":28,
+          "category":"500",
+          "image":"specialty-7colors-design(2)",
+          "name":"Specialty Design",
+          "price": 30.00,
+          "num_colors": 7
+      },
+      {
+          "id":29,
+          "category":"500",
+          "image":"specialty-11colors-design(1)",
+          "name":"Specialty Design",
+          "price": 30.00,
+          "num_colors": 11
+      }
+  ]}
