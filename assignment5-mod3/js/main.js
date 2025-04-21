@@ -136,9 +136,7 @@ function updateCart(p) {
 }
 
 function displayDesigns() {
-  function displayImages() {
     imageContainer = document.getElementsByClassName("carousel-inner")[0];
-    // console.log(imageContainer.innerHTML);
   
     fetch("./data/designs.json")
         .then(response => response.json())
@@ -175,4 +173,3 @@ function displayDesigns() {
             });
           })
   }
-}
