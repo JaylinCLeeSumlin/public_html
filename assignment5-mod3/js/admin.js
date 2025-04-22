@@ -6,12 +6,11 @@ document.addEventListener("DOMContentLoaded",()=>{
   })
 
 function loadProducts(){
-    config.current_cat= document.getElementById("cat").value;
     fetch("./data/products.json")
         .then(response => response.json())
         .then(data =>{
             data.products.forEach(p => {
-                    products.push(p);
+                products.push(p);
             });
             displayProducts();
         })
@@ -29,13 +28,13 @@ function displayProducts() {
 
         subDiv = document.createElement("div");
         subDiv.className = "fw-bold";
-        subDiv.textContent = p.title;
+        subDiv.textContent = `${p.title}`;
         div.appendChild(subDiv);
         item.appendChild(div);
 
         span = document.createElement("span");
         span.className = "badge text-bg-primary rounded-pill";
-        span.textContent = "3";
+        span.textContent = `${Math.getRandomInt(100)}`;
         item.appendChild(span);
 
     }) 
@@ -47,7 +46,7 @@ function loadDesigns(){
         .then(response => response.json())
         .then(data =>{
             data.products.forEach(p => {
-                    designs.push(p);
+                designs.push(p);
             });
             displayDesigns();
         })
