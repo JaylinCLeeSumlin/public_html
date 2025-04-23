@@ -1,0 +1,66 @@
+{
+    "description":"Men, Women, and kids Apparel",
+    "products":[
+
+        {
+           "id":1,
+           "category":"100",
+           "images":[
+            "https://assets.thenorthface.com/images/t_img/f_auto,h_400,w_344,e_unsharp_mask:150/dpr_2.0/v1723268901/NF0A3C8D4G3-HERO/Mens-1996-Retro-Nuptse-Jacket.png",
+            "https://assets.thenorthface.com/images/t_img/f_auto,h_400,w_344,e_unsharp_mask:150/dpr_2.0/v1723268899/NF0A3C8D4G3-HERO2/Mens-1996-Retro-Nuptse-Jacket.png",
+            "https://assets.thenorthface.com/images/t_img/f_auto,h_400,w_344,e_unsharp_mask:100/dpr_2.0/v1723268901/NF0A3C8D4G3-BACK/Mens-1996-Retro-Nuptse-Jacket.png"
+            ],
+            "name":"Men’s 1996 Retro Nuptse Jacket",
+            "price":330.00,
+            "currency": "USD",
+            "currency_symbol":"$",
+            "size":["Small", "Medium", "Large"],
+            "descriptions":
+                {
+                    "Solid body": "40D 57 g/m² 100% recycled nylon ripstop with non-PFC durable water-repellent (non-PFC DWR) finish",
+                    "Avg Weight": "775 g (1 lb 11.34 oz)",
+                    "Print body": "50D 78 g/m² 100% recycled polyester ripstop with non-PFC DWR finish"
+                }
+        },
+        {
+            "id":2,
+            "category":"200",
+            "images":[
+             "https://assets.thenorthface.com/images/t_img/f_auto,h_400,w_344,e_unsharp_mask:150/dpr_2.0/v1722981837/NF0A88YXROU-HERO/Womens-DRYVENT-Mono-Mountain-Jacket.png",
+             "https://assets.thenorthface.com/images/t_img/f_auto,h_400,w_344,e_unsharp_mask:100/dpr_2.0/v1722981837/NF0A88YXROU-HERO2/Womens-DRYVENT-Mono-Mountain-Jacket.png",
+             "https://assets.thenorthface.com/images/t_img/f_auto,h_400,w_344,e_unsharp_mask:100/dpr_2.0/v1722981837/NF0A88YXROU-BACK/Womens-DRYVENT-Mono-Mountain-Jacket.png"
+             ],
+             "name":"Women’s DRYVENT™ Mono Mountain Jacket",
+             "price":250.00,
+             "currency": "USD",
+             "currency_symbol":"$",
+             "size":["Small", "Medium", "Large"],
+             "descriptions":
+                 {
+                     "Solid body": "140 g/m² DryVent™ Mono 2L—100% recycled polyester with non-PFC durable water-repellent (non-PFC DWR) finish",
+                     "Avg Weight": "700 g (1 lb 10.34 oz)",
+                     "Print body": "138 g/m² DryVent™ Mono 2L—100% recycled polyester with non-PFC DWR finish"
+                 }
+         },
+         {
+            "id":3,
+            "category":"300",
+            "images":[
+             "https://assets.thenorthface.com/images/t_img/f_auto,h_400,w_344,e_unsharp_mask:150/dpr_2.0/v1733356603/NF0A7ZZP5RU-HERO/Kids-Antora-Rain-Jacket.png",
+             "https://assets.thenorthface.com/images/t_img/f_auto,h_400,w_344,e_unsharp_mask:150/dpr_2.0/v1733356603/NF0A7ZZP5RU-HERO/Kids-Antora-Rain-Jacket.png",
+             "https://assets.thenorthface.com/images/t_img/f_auto,h_400,w_344,e_unsharp_mask:100/dpr_2.0/v1733356604/NF0A7ZZP5RU-HERO3/Kids-Antora-Rain-Jacket.png"
+             ],
+             "name":"Kids’ Antora Rain Jacket",
+             "price":80.00,
+             "currency": "USD",
+             "currency_symbol":"$",
+             "size":["2T", "3T", "4T"],
+             "descriptions":
+                 {
+                     "Body": "111 g/m² DryVent™ 2L—100% recycled polyester ripstop with non-PFC durable water-repellent (non-PFC DWR) finish",
+                     "Body Lining": "50 g/m² 100% recycled polyester mesh",
+                     "Hood and sleeve lining": "66 g/m² 100% recycled polyester taffeta"
+                 }
+         }
+    ]
+}

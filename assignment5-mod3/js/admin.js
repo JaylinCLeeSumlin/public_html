@@ -34,7 +34,7 @@ function displayProducts() {
 
         span = document.createElement("span");
         span.className = "badge text-bg-primary rounded-pill";
-        span.textContent = `${Math.getRandomInt(100)}`;
+        span.textContent = `${getRandomInt(100)}`;
         item.appendChild(span);
 
     }) 
