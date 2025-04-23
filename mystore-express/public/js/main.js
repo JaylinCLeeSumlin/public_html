@@ -1,10 +1,7 @@
-// const UniversalCookie = require('universai-cookie');
-
 var config ={
     current_cat:null,
     products:[]
 }
-
 
 const Categories= Object.freeze({
     MEN: 100,
@@ -24,7 +21,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 function loadProducts(){
     config.current_cat= document.getElementById("cat").value;
-    fetch("data/products.json")
+    fetch("/mystore-express/data/products.json")
         .then(response => response.json())
         .then(data =>{
             data.products.forEach(p => {
@@ -77,7 +74,6 @@ function updateAddCartBtnHandler() {
     for(let i = 0; i < listOfAddbtn.length; i++){
         listOfAddbtn[i].addEventListener("click", (e)=> {
             let pid = listOfAddbtn[i].dataset.id;
-            // console.log(`pid: ${listOfAddbtn[i].dataset.id}`);
 
             let product = config.products.find(p => p.id === pid);
             if (product) {
@@ -94,6 +90,7 @@ function updateAddCartBtnHandler() {
     }
     
     function addToCart(pid, price, name) {
+        console.log("addToCart() called")
 
         fetch("/cart/add", {
             method: "POST",

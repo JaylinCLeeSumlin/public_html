@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
 
 router.post("/add", (req, res) => {
     const { pid, name, price } = req.body;
-    var cart = req.cookie.shoppingCart;
+    var cart = req.cookies.shoppingCart;
 
     var item = cart.find(i => i.pid === pid);
     if (item) {
@@ -21,6 +21,9 @@ router.post("/add", (req, res) => {
     res.json({ msg: `item od id ${pid} added to cart`, cart})
 })
 
-router.port("/clear")
+router.post("/clear", (req, res) => {
+    res.clarCookie("shoppingCart");
+    res.json({ msg: "Cart cleard" })
+})
 
 module.exports = router;
