@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <main>
+        <form action="/auth/login" method="post">
+            <div style="width: 350px; padding: 15px; border: 2px solid red">
+                <div>
+                    <label for="uname">User Name:</label>
+                    <input type="text" name="uname" id="uname" placeholder="enter your username"/>
+                </div>
+                <div>
+                    <label for="passwd">Passwrod:</label>
+                    <input type="password" name="password" id="passwd"/>
+                </div>
+                <div style="margin: 10px;">
+                    <input type="submit" name="submitbtn" id="submitbtn" value="Login"/>
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+</div>
+<footer class="footer">
+    <%- include('../partials/footer'); %>
+</footer>
+</body>
+
+</html>

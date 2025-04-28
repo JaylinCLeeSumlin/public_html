@@ -1,0 +1,25 @@
+img.logo{
+
+    width: 150px;
+    margin-right:20px ;
+    float: left;
+    border-right: 10px solid red;
+
+}
+
+.header{
+    min-width: 155px;
+    background-color: #ecf5fd;
+    margin-bottom: 5px;
+}
+
+.modal{
+
+    background-color: lightgray;
+    color: black;
+    width: 300px;
+    height: 400px;
+    z-index: 1000;
+    display: block;
+    visibility: hidden;
+}
